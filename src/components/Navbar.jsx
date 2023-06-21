@@ -37,28 +37,30 @@ const Navbar = () => {
             );
           })}
         </ul>
-        {/* <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="responsive-nav">
           <img
             src={!toggle ? menu : close}
             alt="menu bar"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
+            className="responsive-nav-img"
             onClick={() => setToggle(!toggle)}
           />
           {toggle ? (
-            <div className="flex p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl">
-              <ul className="list-none flex items-start flex-col gap-4">
+            <div className="nav-open-wraper">
+              <ul className="nav-open-ul">
                 {navLinks.map((link) => {
                   return (
-                    <li
-                      key={link.id}
-                      className={`${
-                        isActive === link.title
-                          ? "text-white"
-                          : "text-secondary"
-                      } font-poppins font-heavy text-[16px] font-semibold`}
-                      onClick={() => setIsActive(link.title)}
-                    >
-                      <a href={`#${link.id}`}>{link.title}</a>
+                    <li key={link.id}>
+                      <a
+                        href={`#${link.id}`}
+                        className={`${
+                          isActive === link.title
+                            ? "text-active"
+                            : "text-inactive"
+                        } a-link`}
+                        onClick={() => setIsActive(link.title)}
+                      >
+                        {link.title}
+                      </a>
                     </li>
                   );
                 })}
@@ -67,7 +69,7 @@ const Navbar = () => {
           ) : (
             ""
           )}
-        </div> */}
+        </div>
       </div>
     </nav>
   );

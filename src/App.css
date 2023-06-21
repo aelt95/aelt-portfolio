@@ -12,6 +12,7 @@ a {
   text-decoration: none;
 }
 .hero-section {
+  position: relative;
   height: 100vh;
   height: 100svh;
   overflow-y: hidden;

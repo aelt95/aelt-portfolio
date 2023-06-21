@@ -16,7 +16,6 @@
 .navbar {
   max-width: 80rem;
   margin: 0 auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,4 +35,46 @@
 .a-link:hover,
 .text-active {
   color: white;
+}
+.responsive-nav {
+  display: none;
+}
+@media (max-width: 900px) {
+  .navbar-wraper {
+    padding: 0 1rem;
+  }
+  .nav-list {
+    display: none;
+  }
+  .responsive-nav {
+    display: block;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .responsive-nav-img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+  }
+  .nav-open-wraper {
+    background: linear-gradient(to right, #434343, #0000006a);
+    position: absolute;
+    top: 60px;
+    padding: 6px;
+    min-width: 140px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+  .nav-open-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .a-link {
+    color: #aaa6c3;
+    font-size: 22px;
+    font-weight: 500;
+  }
 }

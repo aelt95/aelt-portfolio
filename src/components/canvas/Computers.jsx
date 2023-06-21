@@ -46,7 +46,6 @@ const ComputerCanvas = () => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
     window.addEventListener("resize", function () {
       setIsMobile(mediaQuery.matches);
-      console.log(mediaQuery.matches, isMobile);
     });
   }, []);
 

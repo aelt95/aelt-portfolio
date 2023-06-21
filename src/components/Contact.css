@@ -24,7 +24,7 @@
   font-size: 60px;
 }
 .contact-form {
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -68,23 +68,32 @@ textarea::placeholder {
   border: none;
   width: fit-content;
   border-radius: 0.5rem;
-  padding: 1rem 2.25rem;
+  padding: 0.5rem 2.25rem;
   font-weight: 800;
   font-size: 18px;
 }
 .earth-wraper {
   height: 550px;
+  width: 50%;
 }
-
+@media (max-width: 1200px) {
+  .contact-content {
+    width: 90%;
+  }
+  .earth-wraper {
+    height: 400px;
+  }
+}
 @media (max-width: 720px) {
   .section-contact {
     flex-direction: column-reverse;
   }
   .contact-content {
-    width: auto;
+    width: 90%;
   }
   .earth-wraper {
-    height: 250px;
-    margin-bottom: 4rem;
+    height: 350px;
+    width: 70%;
+    margin-bottom: 1rem;
   }
 }
