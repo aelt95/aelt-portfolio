@@ -1,0 +1,13 @@
+.tech-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 80rem;
+  margin: 2rem auto 0;
+}
+.tech-item {
+  height: 7rem;
+  width: 7rem;
+}

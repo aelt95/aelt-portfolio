@@ -1,0 +1,93 @@
+.section-works {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.section-works-title p {
+  font-size: 18px;
+  color: #aaa6c3;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.section-works-title h2 {
+  color: #ffff;
+  font-size: 60px;
+}
+.section-description {
+  color: #aaa6c3;
+  margin-top: 1rem;
+  max-width: 48rem;
+  text-align: justify;
+}
+.project-cards-wraper {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+.work-tilt-card-wraper {
+  width: 360px;
+  background-color: #151030;
+  padding: 1.25rem;
+  border-radius: 20px;
+  transition: 200ms;
+}
+.work-tilt-img_icon-wraper {
+  position: relative;
+  width: 100%;
+  height: 230px;
+}
+.work-tilt-img_icon-wraper img {
+  border-radius: 20px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.work-icon-wraper {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  inset: 0;
+  margin: 5px;
+}
+.work-icon-background {
+  background: linear-gradient(to right, #434343, #000000);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-icon-background img {
+  height: 25px;
+  width: 25px;
+}
+.work-tilt-card-description {
+  margin-top: 1.25rem;
+}
+.work-tilt-card-description h3 {
+  color: #ffff;
+  font-size: 24px;
+}
+.work-tilt-card-description p {
+  color: #aaa6c3;
+  margin-top: 0.5rem;
+}
+.tag-wraper {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.blue-text {
+  color: #2f80ed;
+}
+.green-text {
+  color: #11998e;
+}
+.pink-text {
+  color: #ec008c;
+}

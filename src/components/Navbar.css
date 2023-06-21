@@ -1,0 +1,39 @@
+.logo {
+  height: 4rem;
+  width: auto;
+  filter: invert();
+}
+.logo-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-wraper {
+  padding: 0 4rem;
+  width: 100%;
+  background-color: #050816;
+}
+.navbar {
+  max-width: 80rem;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+.a-link {
+  color: #aaa6c3;
+  font-size: 22px;
+  font-weight: 500;
+}
+.a-link:hover,
+.text-active {
+  color: white;
+}
