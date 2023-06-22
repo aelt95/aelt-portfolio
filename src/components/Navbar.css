@@ -9,9 +9,12 @@
   justify-content: center;
 }
 .navbar-wraper {
+  position: fixed;
   padding: 0 4rem;
   width: 100%;
-  background-color: #050816;
+  background-color: #050816c8;
+  backdrop-filter: blur(20px);
+  z-index: 99;
 }
 .navbar {
   max-width: 80rem;
@@ -40,8 +43,11 @@
   display: none;
 }
 @media (max-width: 900px) {
+  .logo {
+    height: 3.5rem;
+  }
   .navbar-wraper {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
   .nav-list {
     display: none;
