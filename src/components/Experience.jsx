@@ -18,12 +18,12 @@ const ExperienceCard = ({ experience }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className="flex justify-center items-center w-full h-full">
-          {/* <img
+        <div className="company-img-container">
+          <img
             src={experience.icon}
             alt={experience.company_name}
-            className="w-[60%] h-[60%] object-contain"
-          /> */}
+            className="company-img"
+          />
         </div>
       }
     >
@@ -52,8 +52,8 @@ const Experience = () => {
   return (
     <section id="section-experience" className="section-experience">
       <div className="section-experience-header">
-        <p>What I have done so far</p>
-        <h2>Work Experience.</h2>
+        <p>How did I end up here?</p>
+        <h2>My Journey.</h2>
       </div>
 
       <div className="experience-vertical-timeline-wraper">

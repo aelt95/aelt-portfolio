@@ -25,3 +25,11 @@ a {
   position: relative;
   z-index: 0;
 }
+section {
+  padding: 66px 1rem 0;
+}
+@media (max-width: 720px) {
+  section {
+    padding: 66px 0.5rem 0;
+  }
+}

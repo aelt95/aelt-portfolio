@@ -1,7 +1,6 @@
 .about-section {
   max-width: 80rem;
   margin: 0 auto;
-  min-height: 100vh;
 }
 .about-header p {
   font-size: 18px;
@@ -16,7 +15,7 @@
 .about-description {
   color: #aaa6c3;
   margin-top: 1rem;
-  max-width: 48rem;
+  max-width: 52rem;
   text-align: justify;
 }
 .about-card-wraper {
@@ -35,7 +34,8 @@
   width: 100%;
   background: linear-gradient(to top, #11998e, #38ef7d);
   border-radius: 20px;
-  padding: 1px;
+  padding: 2px;
+  animation: rotate 1s infinite linear;
 }
 .tilt-card-content {
   background-color: #151030;
@@ -55,4 +55,10 @@
   text-align: center;
   color: white;
   margin-top: 2rem;
+}
+@keyframes rotate {
+  from {
+  }
+  to {
+  }
 }

@@ -8,7 +8,6 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const formRef = useRef();
 
-  const submitHandler = () => {};
   const changeHandler = (e) => {
     const { name, value } = e.target;
 
@@ -16,8 +15,40 @@ const Contact = () => {
       ...form,
       [name]: value,
     });
+  };
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-    console.log(form);
+    emailjs
+      .send(
+        "service_rmocy67",
+        "template_eq1m48b",
+        {
+          from_name: form.name,
+          to_name: "Anthony",
+          from_email: form.email,
+          to_email: "anthonylopez1230@gmail.com",
+          message: form.message,
+        },
+        "758Y7kb8xelwflYXQ"
+      )
+      .then(() => {
+        setLoading(false);
+        alert(
+          "Thank you for your message. I will get back to you as soon as possible"
+        );
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+        setLoading(false);
+        alert("Something went wrong, please try again later");
+      });
   };
   return (
     <section id="contact" className="section-contact">

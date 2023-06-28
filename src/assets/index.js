@@ -2,7 +2,9 @@ import logo from "./logo-anthony.svg";
 import backend from "./backend.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import creator from "./creator.png";
+import udemy from "./udemy.png";
+import uniatlantico from "./uniatlantico.png";
+import fcc from "./free-code-camp.svg";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -25,7 +27,9 @@ export {
   logo,
   backend,
   mobile,
-  creator,
+  udemy,
+  uniatlantico,
+  fcc,
   web,
   github,
   menu,

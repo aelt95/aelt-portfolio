@@ -30,3 +30,17 @@
 .experience-point-li {
   font-size: 14px;
 }
+.company-img-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  justify-content: center;
+  align-items: center;
+}
+.company-img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 100%;
+  color: #ffff;
+}

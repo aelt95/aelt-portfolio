@@ -15,7 +15,7 @@
 .section-description {
   color: #aaa6c3;
   margin-top: 1rem;
-  max-width: 48rem;
+  max-width: 52rem;
   text-align: justify;
 }
 .project-cards-wraper {
@@ -24,10 +24,11 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  text-align: justify;
   gap: 2.5rem;
 }
 .work-tilt-card-wraper {
-  width: 360px;
+  width: 370px;
   background-color: #151030;
   padding: 1.25rem;
   border-radius: 20px;

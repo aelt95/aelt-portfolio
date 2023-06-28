@@ -89,7 +89,7 @@ textarea::placeholder {
     flex-direction: column-reverse;
   }
   .contact-content {
-    width: 90%;
+    width: 100%;
   }
   .earth-wraper {
     height: 350px;

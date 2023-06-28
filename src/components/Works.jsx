@@ -43,12 +43,7 @@ const Works = () => {
         <h2>Projects.</h2>
       </div>
       <div className="section-description">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tempore
-          odio sequi est, sunt placeat animi id dolores repellat necessitatibus
-          iste dolore! Blanditiis velit ab voluptatibus animi repellat? Error,
-          atque.
-        </p>
+        <p>Let me show you a few examples of what I can do</p>
       </div>
       <div className="project-cards-wraper">
         {projects.map((project, index) => {

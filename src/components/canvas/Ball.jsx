@@ -29,7 +29,6 @@ const Ball = (props) => {
           scale={1.2}
           flatShading
         />
-        {/* <Decal map={decal} position={[0, 0, 1]} /> */}
       </mesh>
     </>
   );
