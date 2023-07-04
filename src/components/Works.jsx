@@ -1,9 +1,16 @@
 import { Tilt } from "react-tilt";
-import { github } from "../assets";
+import { github, stream } from "../assets";
 import { projects } from "../constants";
 import "./Works.css";
 
-const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({
+  name,
+  description,
+  tags,
+  image,
+  github_link,
+  live_link,
+}) => {
   return (
     <Tilt
       options={{ max: 45, scale: 1, speed: 450 }}
@@ -13,10 +20,16 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
         <img src={image} alt={name} />
         <div className="work-icon-wraper">
           <div
-            onClick={() => window.open(source_code_link, "_blank")}
+            onClick={() => window.open(github_link, "_blank")}
             className="work-icon-background"
           >
             <img src={github} alt="github" />
+          </div>
+          <div
+            onClick={() => window.open(live_link, "_blank")}
+            className="work-icon-background"
+          >
+            <img src={stream} alt="live-stream" />
           </div>
         </div>
       </div>

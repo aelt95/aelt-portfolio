@@ -5,7 +5,12 @@ import web from "./web.png";
 import udemy from "./udemy.png";
 import uniatlantico from "./uniatlantico.png";
 import fcc from "./free-code-camp.svg";
-import github from "./github.png";
+import github from "./github.svg";
+import instagram from "./instagram.svg";
+import linkedin from "./linkedin.svg";
+import twitter from "./twitter.svg";
+import stream from "./stream.svg";
+
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -32,6 +37,10 @@ export {
   fcc,
   web,
   github,
+  stream,
+  instagram,
+  linkedin,
+  twitter,
   menu,
   close,
   css,

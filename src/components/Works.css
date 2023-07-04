@@ -51,6 +51,7 @@
   justify-content: end;
   inset: 0;
   margin: 5px;
+  gap: 5px;
 }
 .work-icon-background {
   background: linear-gradient(to right, #434343, #000000);

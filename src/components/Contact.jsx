@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { EarthCanvas } from "./canvas";
+import { instagram, twitter, linkedin, github } from "../assets";
 import "./Contact.css";
 
 const Contact = () => {
@@ -52,6 +53,9 @@ const Contact = () => {
   };
   return (
     <section id="contact" className="section-contact">
+      <div className="earth-wraper">
+        <EarthCanvas />
+      </div>
       <div className="contact-content">
         <p>Get in touch</p>
         <h3>Contact.</h3>
@@ -91,9 +95,26 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <div className="earth-wraper">
-        <EarthCanvas />
-      </div>
+      <footer>
+        You can also find me here:
+        <div className="footer-icons">
+          <a href="https://github.com/aelt95" target="_blank">
+            <img src={github} alt="github" />
+          </a>
+          <a href="https://www.instagram.com/_aelt/" target="_blank">
+            <img src={instagram} alt="instagram" />
+          </a>
+          <a href="https://twitter.com/_aelt" target="_blank">
+            <img src={twitter} alt="twitter" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/anthonylopeztovar/"
+            target="_blank"
+          >
+            <img src={linkedin} alt="linkedin" />
+          </a>
+        </div>
+      </footer>
     </section>
   );
 };

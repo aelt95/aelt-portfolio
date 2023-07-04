@@ -3,14 +3,11 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { Loader } from "@react-three/drei";
 
-const Computers = ({ getLoading, isMobile }) => {
+const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
-  const onLoadHandler = () => {
-    return getLoading(true);
-  };
   return (
-    <mesh onBeforeRender={onLoadHandler}>
+    <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
       <pointLight intensity={1} position={[1, 3, 0]} />
       <spotLight
@@ -33,11 +30,6 @@ const Computers = ({ getLoading, isMobile }) => {
 
 const ComputerCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-
-  const getLoadingHandler = (bool) => {
-    setIsLoading(bool);
-  };
 
   useEffect(() => {
     let actualWidth = window.innerWidth;
@@ -51,13 +43,6 @@ const ComputerCanvas = () => {
 
   return (
     <>
-      {!isLoading ? (
-        <h1 className="absolute top-[500px] text-[#915eff] text-[90px]">
-          Add a spiner later
-        </h1>
-      ) : (
-        ""
-      )}
       <Canvas
         frameloop="demand"
         shadows
@@ -73,7 +58,7 @@ const ComputerCanvas = () => {
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}
           />
-          <Computers getLoading={getLoadingHandler} isMobile={isMobile} />
+          <Computers isMobile={isMobile} />
         </Suspense>
         <Preload all />
       </Canvas>

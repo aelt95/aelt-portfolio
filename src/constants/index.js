@@ -132,10 +132,10 @@ const technologies = [
   //   name: "MongoDB",
   //   icon: mongodb,
   // },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
   // {
   //   name: "git",
   //   icon: git,
@@ -161,7 +161,8 @@ const projects = [
       },
     ],
     image: openIA,
-    source_code_link: "https://github.com/aelt95/DALL-E-Project",
+    github_link: "https://github.com/aelt95/DALL-E-Project",
+    live_link: "https://dall-e-app-aelt.netlify.app/",
   },
   {
     name: "Parallax",
@@ -178,8 +179,9 @@ const projects = [
       },
     ],
     image: parallax,
-    source_code_link:
+    github_link:
       "https://github.com/aelt95/parallex-effect/tree/master/parallax-effect",
+    live_link: "https://parallex-effect-aelt.netlify.app/",
   },
 ];
 export { navLinks, services, experiences, technologies, projects };

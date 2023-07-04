@@ -1,16 +1,17 @@
 .section-contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   max-width: 80rem;
   margin: 4rem auto 0;
+  flex-wrap: wrap;
 }
 .contact-content {
   background-color: #100d25c8;
   padding: 2rem;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 2rem;
   flex: 1;
 }
 .contact-content p {
@@ -76,6 +77,31 @@ textarea::placeholder {
   height: 550px;
   width: 50%;
 }
+footer {
+  margin: 22px 0;
+  padding-top: 10px;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer-icons img {
+  width: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.footer-icons img:hover {
+  scale: 1.2;
+}
 @media (max-width: 1200px) {
   .contact-content {
     width: 90%;
@@ -86,7 +112,7 @@ textarea::placeholder {
 }
 @media (max-width: 720px) {
   .section-contact {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .contact-content {
     width: 100%;
