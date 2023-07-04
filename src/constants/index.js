@@ -100,18 +100,18 @@ const experiences = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
+  // {
+  //   name: "HTML 5",
+  //   icon: html,
+  // },
   {
     name: "JavaScript",
     icon: javascript,
   },
+  // {
+  //   name: "CSS 3",
+  //   icon: css,
+  // },
   // {
   //   name: "TypeScript",
   //   icon: typescript,
@@ -136,10 +136,10 @@ const technologies = [
     name: "Three JS",
     icon: threejs,
   },
-  // {
-  //   name: "git",
-  //   icon: git,
-  // },
+  {
+    name: "git",
+    icon: git,
+  },
 ];
 const projects = [
   {
