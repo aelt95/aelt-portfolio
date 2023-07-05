@@ -68,6 +68,7 @@ const Contact = () => {
               value={form.name}
               onChange={changeHandler}
               placeholder="Andrej Lopez"
+              required
             />
           </label>
           <label className="contact-label">
@@ -78,6 +79,7 @@ const Contact = () => {
               value={form.email}
               onChange={changeHandler}
               placeholder="a-lopez@example.com"
+              required
             />
           </label>
           <label className="contact-label">
@@ -88,6 +90,7 @@ const Contact = () => {
               value={form.message}
               onChange={changeHandler}
               placeholder="Leave your message here."
+              required
             />
           </label>
           <button type="submit" className="contact-button">
