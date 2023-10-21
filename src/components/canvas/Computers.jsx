@@ -3,8 +3,8 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { Loader } from "@react-three/drei";
 
-const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+const Computer = ({ isMobile }) => {
+  const computer = useGLTF("./desktop_pc/scene.glb");
 
   return (
     <mesh>
@@ -44,10 +44,9 @@ const ComputerCanvas = () => {
   return (
     <>
       <Canvas
-        frameloop="demand"
-        shadows
         camera={{ position: [20, 3, 5], fov: 25 }}
         gl={{ preserveDrawingBuffer: true }}
+        dpr={1}
       >
         <Suspense fallback={null}>
           <OrbitControls
@@ -58,7 +57,7 @@ const ComputerCanvas = () => {
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}
           />
-          <Computers isMobile={isMobile} />
+          <Computer isMobile={isMobile} />
         </Suspense>
         <Preload all />
       </Canvas>
