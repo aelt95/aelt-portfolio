@@ -1,25 +1,16 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import { Loader } from "@react-three/drei";
+import { OrbitControls, Preload, useGLTF, Loader } from "@react-three/drei";
 
 const Computer = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.glb");
+  const computerModel = useGLTF("./desktop_pc/scene.glb");
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={1} position={[1, 3, 0]} />
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
-      />
+      <pointLight intensity={1} position={[1, 2, 0]} />
+      <directionalLight intensity={1} color={"#b68fff"} />
       <primitive
-        object={computer.scene}
+        object={computerModel.scene}
         scale={isMobile ? 0.7 : 1}
         position={[0, -1.5, -1.5]}
         rotation={[-0.01, -0.2, -0.15]}
@@ -43,11 +34,7 @@ const ComputerCanvas = () => {
 
   return (
     <>
-      <Canvas
-        camera={{ position: [20, 3, 5], fov: 25 }}
-        gl={{ preserveDrawingBuffer: true }}
-        dpr={1}
-      >
+      <Canvas camera={{ position: [20, 3, 5], fov: 25 }}>
         <Suspense fallback={null}>
           <OrbitControls
             enableZoom={false}
