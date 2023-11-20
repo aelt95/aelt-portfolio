@@ -17,6 +17,7 @@ import {
   git,
   parallax,
   openIA,
+  threejsGame,
 } from "../assets";
 
 const navLinks = [
@@ -100,38 +101,18 @@ const experiences = [
 ];
 
 const technologies = [
-  // {
-  //   name: "HTML 5",
-  //   icon: html,
-  // },
   {
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //   name: "CSS 3",
-  //   icon: css,
-  // },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
   {
     name: "React JS",
     icon: reactjs,
   },
-  // {
-  //   name: "Tailwind CSS",
-  //   icon: tailwind,
-  // },
   {
     name: "Node JS",
     icon: nodejs,
   },
-  // {
-  //   name: "MongoDB",
-  //   icon: mongodb,
-  // },
   {
     name: "Three JS",
     icon: threejs,
@@ -148,7 +129,7 @@ const projects = [
       "The web page uses DALL-E to create random and unique images. The user-friendly interface allows users to easily generate and explore these captivating visuals.",
     tags: [
       {
-        name: "Next",
+        name: "Next Js",
         color: "blue-text",
       },
       {
@@ -170,7 +151,7 @@ const projects = [
       "The web page showcases an eye-catching parallax effect that captivates visitors. The background elements move at different speeds, creating a visually stunning and immersive experience.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text",
       },
       {
@@ -182,6 +163,18 @@ const projects = [
     github_link:
       "https://github.com/aelt95/parallex-effect/tree/master/parallax-effect",
     live_link: "https://parallex-effect-aelt.netlify.app/",
+  },
+  {
+    name: "Three.js Game Example",
+    description:
+      "A small interactive web page as a showcase of Three.js. The obstacles will move as soon you start the game and record your time. Try to improve your mark and have fun!",
+    tags: [
+      { name: "react", color: "blue-text" },
+      { name: "Three.js", color: " grey-text" },
+    ],
+    image: threejsGame,
+    github_link: "https://github.com/aelt95/3d-game",
+    live_link: "https://game-threejs.vercel.app/",
   },
 ];
 export { navLinks, services, experiences, technologies, projects };
