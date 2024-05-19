@@ -18,6 +18,7 @@ import {
   parallax,
   openIA,
   threejsGame,
+  devflow,
 } from "../assets";
 
 const navLinks = [
@@ -123,6 +124,29 @@ const technologies = [
   },
 ];
 const projects = [
+  {
+    name: "DevOverflow",
+    description: `
+      Featuring server-side rendering for optimal performance and responsiveness. It also utilizes Next.js Actions for seamless interactivity and real-time updates.`,
+    tags: [
+      {
+        name: "Next Js",
+        color: "blue-text",
+      },
+      {
+        name: "mongodb",
+        color: "green-text",
+      },
+      {
+        name: "Clerk Auth",
+        color: "blue-text",
+      },
+    ],
+    image: devflow,
+    github_link: "https://github.com/aelt95/stackoverflow-next",
+    live_link: "https://stackoverflow-next-six.vercel.app/",
+  },
+
   {
     name: "Dall-E 2.0",
     description:

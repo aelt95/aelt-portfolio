@@ -28,6 +28,7 @@ import threejs from "./tech/threejs.svg";
 import parallax from "./parallax-effect.png";
 import openIA from "./openIA.png";
 import threejsGame from "./threegame.png";
+import devflow from "./devflow.png";
 
 export {
   logo,
@@ -57,4 +58,5 @@ export {
   parallax,
   openIA,
   threejsGame,
+  devflow,
 };
